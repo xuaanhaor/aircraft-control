@@ -1,0 +1,26 @@
+[
+  {
+    "name": "AP00001",
+    "runawaySize": 3000.0,
+    "maxFixedWingParkingPlace": 15.0,
+    "fixedWingId": [],
+    "maxRotatedWingParkingPlace": 15.0,
+    "helicopterId": []
+  },
+  {
+    "name": "AP00002",
+    "runawaySize": 5000.0,
+    "maxFixedWingParkingPlace": 10.0,
+    "fixedWingId": [],
+    "maxRotatedWingParkingPlace": 7.0,
+    "helicopterId": []
+  },
+  {
+    "name": "AP00003",
+    "runawaySize": 4000.0,
+    "maxFixedWingParkingPlace": 16.0,
+    "fixedWingId": [],
+    "maxRotatedWingParkingPlace": 15.0,
+    "helicopterId": []
+  }
+]

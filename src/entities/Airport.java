@@ -9,16 +9,18 @@ public class Airport {
     private String id;
     private String name;
     private Double runawaySize;
-    private Double maxFixedwingParkingPlace;
+    private Double maxFixedWingParkingPlace;
     private List<String> fixedWingId;
     private Double maxRotatedWingParkingPlace;
     private List<String> helicopterId;
 
-    public Airport(String name, Double runawaySize, Double maxFixedwingParkingPlace, List<String> fixedWingId, Double maxRotatedWingParkingPlace, List<String> helicopterId) {
+    public Airport(){}
+
+    public Airport(String name, Double runawaySize, Double maxFixedWingParkingPlace, List<String> fixedWingId, Double maxRotatedWingParkingPlace, List<String> helicopterId) {
         this.id = UniqueId.generateId("AP");
         this.name = name;
         this.runawaySize = runawaySize;
-        this.maxFixedwingParkingPlace = maxFixedwingParkingPlace;
+        this.maxFixedWingParkingPlace = maxFixedWingParkingPlace;
         this.fixedWingId = fixedWingId;
         this.maxRotatedWingParkingPlace = maxRotatedWingParkingPlace;
         this.helicopterId = helicopterId;
@@ -49,11 +51,11 @@ public class Airport {
     }
 
     public Double getMaxFixedwingParkingPlace() {
-        return maxFixedwingParkingPlace;
+        return maxFixedWingParkingPlace;
     }
 
-    public void setMaxFixedwingParkingPlace(Double maxFixedwingParkingPlace) {
-        this.maxFixedwingParkingPlace = maxFixedwingParkingPlace;
+    public void setMaxFixedWingParkingPlace(Double maxFixedWingParkingPlace) {
+        this.maxFixedWingParkingPlace = maxFixedWingParkingPlace;
     }
 
     public List<String> getFixedWingId() {

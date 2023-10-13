@@ -12,9 +12,14 @@ import java.io.InputStreamReader;
 
 public class HelicopterServiceImpl implements HelicopterService {
 
-    AircraftService service;
+    private final AircraftService service;
 
     BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+
+    public HelicopterServiceImpl(AircraftService service) {
+        this.service = service;
+    }
+
     @Override
     public Helicopter createHelicopter(String model, Double cruiseSpeed, Double emptyWeight, Double maxTakeoffWeight) throws IOException {
         System.out.println(" - Input range for helicopter:: ");

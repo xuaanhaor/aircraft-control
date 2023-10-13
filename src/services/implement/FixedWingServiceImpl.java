@@ -19,11 +19,6 @@ public class FixedWingServiceImpl implements FixedWingService {
         this.service = service;
     }
 
-    public void deleteFixedWing(Airport airport) throws IOException {
-        System.out.println("- The index of the plane you want to remove::");
-        int index = Validate.isNegative(Integer.parseInt(input.readLine()));
-        service.removeAirplane(airport.getFixedWingId(), index);
-    }
 
     @Override
     public FixedWing createFixedWing(String model, Double cruiseSpeed, Double emptyWeight, Double maxTakeoffWeight) throws IOException {
@@ -34,4 +29,13 @@ public class FixedWingServiceImpl implements FixedWingService {
         Double minNeededRunawaySize = Validate.isNegative(Double.parseDouble(input.readLine()));
         return new FixedWing(model, cruiseSpeed, emptyWeight, maxTakeoffWeight, planeType, minNeededRunawaySize);
     }
+
+    @Override
+    public void deleteFixedWing(Airport airport) throws IOException {
+        System.out.println("- The index of the plane you want to remove::");
+        int index = Validate.isNegative(Integer.parseInt(input.readLine()));
+        service.removeAirplane(airport.getFixedWingId(), index);
+    }
+
+
 }
